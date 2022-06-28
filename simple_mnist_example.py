@@ -1,5 +1,5 @@
 '''
-The standard mnist dataset example.
+The standard mnist digits dataset example.
 '''
 import tensorflow as tf
 
