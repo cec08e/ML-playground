@@ -54,9 +54,6 @@ for fname in pred_list:
     x = tf.keras.preprocessing.image.img_to_array(img)
     x = x/255.0
     x = np.expand_dims(x, axis=0) # Add a new axis a index 0, equivalent to [a,b] --> [[a,b]]
-    #print(fname, x)
-    #images = np.vstack([x])
-    #print(images)
     classes = model.predict(x, batch_size=1)
     print("Prediction: ", classes[0])
     if classes[0]>0.5:
